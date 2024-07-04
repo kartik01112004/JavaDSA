@@ -15,5 +15,20 @@ public class JavaBasics{
         System.out.println(name);
         a = 55;
         System.out.println(a);
+
+        // datatypes
+        // byte c = 8;
+        // System.out.println(c);
+        // char ch = 'a';
+        // System.out.println(ch);
+        // boolean var = true;
+        // float f = 10.4f;
+        // long l = 45778415678014l;
+        //double
+        //short
+
+
+
+
     }
 }

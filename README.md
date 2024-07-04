@@ -37,4 +37,20 @@ a variable is a store of memory each type of variable has a particular bit of va
 
 all these memory blocks have a address in memory
 
-!!!note continue from variables in java!!!
+## Data types and there size
+
+1. primitive
+   - byte : 1byte [-128 to 127]
+   - short : 2 bytes
+   - char : 2 bytes
+   - boolean : 1 bytes
+   - int : 4 bytes
+   - long : 8 bytes
+   - float : 4 bytes
+   - double : 8 bytes
+2. non-premitive
+   - String
+   - array
+   - class
+   - object
+   - interface
