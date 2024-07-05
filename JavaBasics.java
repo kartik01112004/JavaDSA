@@ -43,16 +43,41 @@ public class JavaBasics{
         // sum = a+b;
         // System.out.println(sum);
 
-        int m1 = sc.nextInt();
-        int m2 = sc.nextInt();
-        int mul = m1*m2;
-        System.out.println(mul);
+        // int m1 = sc.nextInt();
+        // int m2 = sc.nextInt();
+        // int mul = m1*m2;
+        // System.out.println(mul);
 
         // Area of circle
         // double pi = 3.14;
-        double r = sc.nextDouble();
-        double area = 3.14*r*r;
-        System.out.println(area);
+        // double r = sc.nextDouble();
+        // double area = 3.14*r*r;
+        // System.out.println(area);
+
+        //  Question 1 : In a program, input 3 numbers: A, B andC. Youhave to output the average of these 3 numbers.
+
+        // int A = sc.nextInt();
+        // int B = sc.nextInt();
+        // int C = sc.nextInt();
+        // int avg = (A+B+C)/3;
+        // System.out.println(avg);
+
+        // Question 2: In a program, input the side of a square. You have to output the area of the square
+
+        // float side = sc.nextFloat();
+        // float area = side*side;
+        // System.out.println(area);
+
+        /*  Question 3: Enter cost of 3 items from the user (using float data type)- a pencil, a pen and
+        an eraser. You have to output the total cost of the items back to the user as their bill.
+        (Add on : You can also try adding 18% gst tax to the items in the bill as an advanced problem) */
+
+        float pencil = sc.nextFloat();
+        float pen = sc.nextFloat();
+        float eraser = sc.nextFloat();
+        float amt = pencil+pen+eraser;
+        float total = amt + (amt*18/100);
+        System.out.println(total);
 
     }
 }
