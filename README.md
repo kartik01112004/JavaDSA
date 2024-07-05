@@ -54,3 +54,51 @@ all these memory blocks have a address in memory
    - class
    - object
    - interface
+
+### Commnets in java
+
+we use // this for single line comment and /\* \*/ for multi line commnets
+
+## Input in java
+
+User input is must for program so in order to take input from user we have a library called Scanner. We use this class make its object and can take differnt types of inputs like
+
+- next : stores upto 1st space
+- nextLine : stores everything until next line
+- nextInt : integer as input
+- nextDouble : double as input
+- nextFloat : float as input
+- nextLong : long as input
+- nextByte : takes bytes as input
+- nextShort : takes short as input
+- nextBoolean : takes boolean as input
+
+making an object : `Scanner sc = new Scanner(System.in);`
+taking input : `String input = sc.next();`
+
+## Type conversion
+
+we can convert a variable with smaller data type to a larger one and compatible one its possible how ever if we try opposite it throws an error as its a lossy conversion
+
+possible conversions :
+byte -> short -> int -> float -> long -> double
+
+## Type casting
+
+Java doesnt allow this as we cast lager data into a smaller data type because we may loss some data
+
+its called narrowing or explicit conversion
+eg
+
+```java
+float a = 52.964;
+int b = (int)a;
+// returns 52
+```
+
+if we try to type convert a char to a number it returns ASCII value
+
+## Type Promotion in expressions
+
+1. java promotes byte, short, char to int when evaluating an expression
+2. if any operand is long, float, double then it will promote whole to the biggest of them all either long, double or float
