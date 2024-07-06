@@ -102,3 +102,24 @@ if we try to type convert a char to a number it returns ASCII value
 
 1. java promotes byte, short, char to int when evaluating an expression
 2. if any operand is long, float, double then it will promote whole to the biggest of them all either long, double or float
+
+## Operators in java
+
+symbols that tell compiler to perform some operation
+
+it consists of 2 things
+
+- operands
+- operator
+
+we have 5 types of operators
+
+- arithimatic (Binary/Unary) :
+  - Binary :
+    - +, -, \*, /, %
+  - Unary :
+    - ++, --
+- logical
+- bitwise
+- assignment
+- relational

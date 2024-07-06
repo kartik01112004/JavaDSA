@@ -1,4 +1,4 @@
-import java.util.Scanner;
+// import java.util.Scanner;
 
 public class JavaBasics{
     public static void main(String args[]) {
@@ -9,8 +9,8 @@ public class JavaBasics{
         // System.out.println("*");
         // printing a pattern with print function
 
-        // int a = 10;
-        // int b = 20;
+        int a = 30;
+        int b = 20;
         // String name ="kartik";
         // System.out.println(b);
         // System.out.println(a);
@@ -37,7 +37,7 @@ public class JavaBasics{
 
         // Sum of 2 numbers by user input
 
-        Scanner sc = new Scanner(System.in);
+        // Scanner sc = new Scanner(System.in);
         // int a = sc.nextInt();
         // int b = sc.nextInt();
         // sum = a+b;
@@ -72,12 +72,17 @@ public class JavaBasics{
         an eraser. You have to output the total cost of the items back to the user as their bill.
         (Add on : You can also try adding 18% gst tax to the items in the bill as an advanced problem) */
 
-        float pencil = sc.nextFloat();
-        float pen = sc.nextFloat();
-        float eraser = sc.nextFloat();
-        float amt = pencil+pen+eraser;
-        float total = amt + (amt*18/100);
-        System.out.println(total);
+        // float pencil = sc.nextFloat();
+        // float pen = sc.nextFloat();
+        // float eraser = sc.nextFloat();
+        // float amt = pencil+pen+eraser;
+        // float total = amt + (amt*18/100);
+        // System.out.println(total);
 
+        System.out.println("add = " + (a+b));
+        System.out.println("sub = " + (a-b));
+        System.out.println("mul = " + (a*b));
+        System.out.println("div = " + (a/b));
+        System.out.println("remainder = " + (a%b));
     }
 }
