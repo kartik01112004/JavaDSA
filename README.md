@@ -189,3 +189,11 @@ Retuns true ot false
 
 - bitwise
 - assignment
+
+  - =
+  - +=
+  - -=
+  - \*=
+  - /=
+
+  [file](../Operator Precedence.pdf)
