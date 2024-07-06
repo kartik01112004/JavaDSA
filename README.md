@@ -115,11 +115,77 @@ it consists of 2 things
 we have 5 types of operators
 
 - arithimatic (Binary/Unary) :
+
   - Binary :
     - +, -, \*, /, %
   - Unary :
+
     - ++, --
-- logical
+      post and pre increment/decrement
+      ++a : increase first use after that
+      a++ : increase after use
+
+      ```java
+      int a = 10;
+
+      int b = ++a;
+      System.out.println(a); // 11
+      System.out.println(b); // 11
+
+      int c = a++;
+      System.out.println(a); // 12
+      System.out.println(c); // 11
+
+      int d = --a;
+      System.out.println(a); // 11
+      System.out.println(d); // 11
+
+      int e = a--;
+      System.out.println(a); // 10
+      System.out.println(e); // 11
+      ```
+
+- Relational
+
+  - == : check if LHS equal to RHS
+  - != : Not equal to
+  - > : greater than
+  - < : smaller than
+  - > = : greater than or equl to
+  - <= : smaller than or equal to
+
+Retuns true ot false
+
+- Logical
+
+  - && : and
+
+    ```java
+    System.out.println((3>2) && (5>0)); // true
+    System.out.println((3>2) && (5<0)); // false
+    ```
+
+    both needs to be true for true
+
+  - || : or
+
+    ```java
+    System.out.println((3>2) || (5>0)); // true
+    System.out.println((3>2) || (5<0)); // true
+    System.out.println((3<2) || (5>0)); // true
+    System.out.println((3<2) || (5<0)); // false
+    ```
+
+    atleast one needs to be true for true
+
+  - ! : not
+
+    ```java
+    System.out.println(!(3>2)); // false
+    System.out.println(!(3<2)); // true
+    ```
+
+    changes true to false
+
 - bitwise
 - assignment
-- relational
