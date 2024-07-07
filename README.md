@@ -195,5 +195,3 @@ Retuns true ot false
   - -=
   - \*=
   - /=
-
-  [file](../Operator Precedence.pdf)

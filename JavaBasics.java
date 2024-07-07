@@ -84,5 +84,7 @@ public class JavaBasics{
         System.out.println("mul = " + (a*b));
         System.out.println("div = " + (a/b));
         System.out.println("remainder = " + (a%b));
+
+   
     }
 }
