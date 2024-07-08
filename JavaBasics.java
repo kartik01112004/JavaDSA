@@ -175,20 +175,84 @@ public class JavaBasics{
 
         // Calculator
 
-        System.out.println("Enter A");
-        int a1 = sc.nextInt();
-        System.out.println("Enter B");
-        int b1 = sc.nextInt();
-        System.out.println("Enter Operator");
-        char operator = sc.next().charAt(0);
+        // System.out.println("Enter A");
+        // int a1 = sc.nextInt();
+        // System.out.println("Enter B");
+        // int b1 = sc.nextInt();
+        // System.out.println("Enter Operator");
+        // char operator = sc.next().charAt(0);
 
-        switch(operator){
-            case '+' -> System.out.println(a1+b1);
-            case '-' -> System.out.println(a1-b1);
-            case '*' -> System.out.println(a1*b1);
-            case '/' -> System.out.println(a1/b1);
-            case '%' -> System.out.println(a1%b1);
-            default -> System.out.println("wrong operator");
+        // switch(operator){
+        //     case '+' -> System.out.println(a1+b1);
+        //     case '-' -> System.out.println(a1-b1);
+        //     case '*' -> System.out.println(a1*b1);
+        //     case '/' -> System.out.println(a1/b1);
+        //     case '%' -> System.out.println(a1%b1);
+        //     default -> System.out.println("wrong operator");
+        // }
+
+        //  Question1: WriteaJavaprogramtogetanumberfromtheuserandprintwhether it is positive or negative.
+
+        // int userInp = sc.nextInt();
+        // if(userInp>=0){
+        //     System.out.println(userInp+" is positive");
+        // }else{
+        //     System.out.println(userInp + " is negative");
+        // }
+
+        //  Question2: Finish the following code so that it prints You have a fever if your temperature is above 100 and otherwise prints You don't have a fever.
+
+        double temp = 103.5;
+
+        if(temp>100){
+            System.out.println("You have fever");
+        }else{
+            System.out.println("You dont have fever");
+        }
+
+        // System.out.println("enter day of week in number");
+        // int week = sc.nextInt();
+
+        // switch(week){
+        //     case 1 -> System.out.println("Monday");
+        //     case 2 -> System.out.println("Tuesday");
+        //     case 3 -> System.out.println("Wednesday");
+        //     case 4 -> System.out.println("Thursday");
+        //     case 5 -> System.out.println("Friday");
+        //     case 6 -> System.out.println("Saturday");
+        //     case 7 -> System.out.println("Sunday");
+        // }
+
+        //  leap or no
+
+        // my solution
+        int year = sc.nextInt();
+
+        if(year%4==0){
+            if(year%100==0){
+                if(year%400==0){
+                    System.out.println("leap year");
+                }else{
+                    System.out.println("not leap year");
+                }
+            }else{
+                System.out.println("leap year");
+            }
+        }else{
+            System.out.println("not leap year");
+        }
+
+        // mam solution
+
+        System.out.print("Input the year: ");
+        // int year = sc.nextInt();
+        boolean x = (year % 4) == 0;
+        boolean y = (year % 100) != 0;
+        boolean z = ((year % 100 == 0) && (year % 400 == 0));
+        if (x && (y || z)) {
+        System.out.println(year + " is a leap year");
+        } else {
+        System.out.println(year + " is not a leap year");
         }
 
 
