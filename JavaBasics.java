@@ -1,4 +1,4 @@
-// import java.util.Scanner;
+import java.util.Scanner;
 
 public class JavaBasics{
     public static void main(String args[]) {
@@ -37,7 +37,7 @@ public class JavaBasics{
 
         // Sum of 2 numbers by user input
 
-        // Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         // int a = sc.nextInt();
         // int b = sc.nextInt();
         // sum = a+b;
@@ -85,6 +85,84 @@ public class JavaBasics{
         System.out.println("div = " + (a/b));
         System.out.println("remainder = " + (a%b));
 
-   
+        // Conditional if else
+        int age =52;
+        if(age>=18){
+            System.out.println("You are eligible to vote");
+        } else{
+            System.out.println("You are not eligible to vote");
+        }
+
+        // largest of 2 numbers
+
+        int v = 13;
+        int v1 = 45;
+
+        if(v>v1){
+            System.out.println(v +" is greater");
+        } 
+        if(v==v1){
+            System.out.println(v +" is equal to "+v1);
+        }
+        else{
+            System.out.println(v1 +" is greater");
+        }
+
+        // Odd Even
+
+        int num = 21;
+
+        if(num%2==0){
+            System.out.println("Number is even");
+        }else{
+            System.out.println("Number is odd");
+        }
+
+        // income tax calculator
+
+        // int income = sc.nextInt();
+
+        // float tax; // automaticaly 0
+
+        // if(income<500000){
+        //     tax = 0;
+        //     System.out.println("No tax");
+        //     }else if(income>500000 && income<1000000){
+        //         tax = (income)*0.2f;
+        //         System.out.println("Tax is 20% payable amount is:"+tax);
+        // }else{
+        //     tax = (income)*0.3f;
+        //     System.out.println("Tax is 30% payable amount is:  "+tax);
+        // }
+
+        // largest of 3
+
+        int c = 12;
+        int c1 = 45;
+        int c2 = 67;
+        
+        if(c>c1 && c>c2){
+            System.out.println(c);
+
+        } else if(c1>c2){
+            System.out.println(c1);
+        }else{
+            System.out.println(c2);
+        }
+
+        int number =4;
+
+        String type = ((number%2) == 0) ? "Even" :"odd"; 
+        System.out.println(type);
+
+        // Student pass or fail?
+
+        int marks = 45;
+
+        String status = marks>=33 ? "pass" : "fail";
+
+        System.out.println(status);
+
+
     }
 }

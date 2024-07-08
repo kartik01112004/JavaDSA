@@ -195,3 +195,41 @@ Retuns true ot false
   - -=
   - \*=
   - /=
+
+## Conditional statemets
+
+Conditions that return true or false and some code executes
+if/else ya toh ye ya toh voh
+
+```java
+if(condition){
+  //code to be executed if condition is true
+}
+else{
+  //code to be executed if condition is false
+}
+```
+
+difference in `if else` and `else if`
+
+```java
+if(condition1){}
+//  this is one block
+if(condition2){} // it will run irrespective of 1st if is true or false
+else{}
+
+if(condition1){}
+else if(condition2){}
+else if(condition3){}
+else{}
+// now the 2nd or further ifs will only execute if previous on is false
+
+```
+
+## Ternary operator
+
+`variable = condition?statemnet1 : statement2;`
+
+check condition if true execute statement1 else execute statement2
+
+to store the value it generates we use variable at left sode with assinment operator
