@@ -164,5 +164,33 @@ public class JavaBasics{
         System.out.println(status);
 
 
+        int number1 = 2;
+
+        switch(number1){
+            case 1 -> System.out.println("burger");
+            case 2 -> System.out.println("pizza");
+            case 3 -> System.out.println("momos");
+            default -> System.out.println("We woke up");
+        }
+
+        // Calculator
+
+        System.out.println("Enter A");
+        int a1 = sc.nextInt();
+        System.out.println("Enter B");
+        int b1 = sc.nextInt();
+        System.out.println("Enter Operator");
+        char operator = sc.next().charAt(0);
+
+        switch(operator){
+            case '+' -> System.out.println(a1+b1);
+            case '-' -> System.out.println(a1-b1);
+            case '*' -> System.out.println(a1*b1);
+            case '/' -> System.out.println(a1/b1);
+            case '%' -> System.out.println(a1%b1);
+            default -> System.out.println("wrong operator");
+        }
+
+
     }
 }

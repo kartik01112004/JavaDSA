@@ -233,3 +233,23 @@ else{}
 check condition if true execute statement1 else execute statement2
 
 to store the value it generates we use variable at left sode with assinment operator
+
+## Switch Statement
+
+its a kind of condition statements which check case and execute a statement coresponding to that case
+
+lets say we wanna eat something
+
+there are 3 buttons burger, pizza, momos
+we have to select one then we can use switch
+to select one of the 3 making these 3 possible cases
+
+```java
+switch(variable){
+  case 1 :
+
+  case 2 :
+
+  case 3 :
+}
+```
