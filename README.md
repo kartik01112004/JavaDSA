@@ -253,3 +253,33 @@ switch(variable){
   case 3 :
 }
 ```
+
+## Loops
+
+These make a set of code repeat till some condtion is true
+
+### Types of loops
+
+1. for loop
+2. while loop
+3. do while loop
+
+#### While loop
+
+```java
+while(condition){
+  // repeating code
+}
+```
+
+this loop executes till the condition is true
+
+#### For loop
+
+```java
+for(initialization; condition; increment/decrement){
+  // repeating code
+}
+```
+
+we use for loop when we know how many times we need something to run

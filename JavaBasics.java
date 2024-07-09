@@ -9,8 +9,8 @@ public class JavaBasics{
         // System.out.println("*");
         // printing a pattern with print function
 
-        int a = 30;
-        int b = 20;
+        // int a = 30;
+        // int b = 20;
         // String name ="kartik";
         // System.out.println(b);
         // System.out.println(a);
@@ -79,44 +79,44 @@ public class JavaBasics{
         // float total = amt + (amt*18/100);
         // System.out.println(total);
 
-        System.out.println("add = " + (a+b));
-        System.out.println("sub = " + (a-b));
-        System.out.println("mul = " + (a*b));
-        System.out.println("div = " + (a/b));
-        System.out.println("remainder = " + (a%b));
+        // System.out.println("add = " + (a+b));
+        // System.out.println("sub = " + (a-b));
+        // System.out.println("mul = " + (a*b));
+        // System.out.println("div = " + (a/b));
+        // System.out.println("remainder = " + (a%b));
 
-        // Conditional if else
-        int age =52;
-        if(age>=18){
-            System.out.println("You are eligible to vote");
-        } else{
-            System.out.println("You are not eligible to vote");
-        }
+        // // Conditional if else
+        // int age =52;
+        // if(age>=18){
+        //     System.out.println("You are eligible to vote");
+        // } else{
+        //     System.out.println("You are not eligible to vote");
+        // }
 
-        // largest of 2 numbers
+        // // largest of 2 numbers
 
-        int v = 13;
-        int v1 = 45;
+        // int v = 13;
+        // int v1 = 45;
 
-        if(v>v1){
-            System.out.println(v +" is greater");
-        } 
-        if(v==v1){
-            System.out.println(v +" is equal to "+v1);
-        }
-        else{
-            System.out.println(v1 +" is greater");
-        }
+        // if(v>v1){
+        //     System.out.println(v +" is greater");
+        // } 
+        // if(v==v1){
+        //     System.out.println(v +" is equal to "+v1);
+        // }
+        // else{
+        //     System.out.println(v1 +" is greater");
+        // }
 
-        // Odd Even
+        // // Odd Even
 
-        int num = 21;
+        // int num = 21;
 
-        if(num%2==0){
-            System.out.println("Number is even");
-        }else{
-            System.out.println("Number is odd");
-        }
+        // if(num%2==0){
+        //     System.out.println("Number is even");
+        // }else{
+        //     System.out.println("Number is odd");
+        // }
 
         // income tax calculator
 
@@ -137,41 +137,41 @@ public class JavaBasics{
 
         // largest of 3
 
-        int c = 12;
-        int c1 = 45;
-        int c2 = 67;
+        // int c = 12;
+        // int c1 = 45;
+        // int c2 = 67;
         
-        if(c>c1 && c>c2){
-            System.out.println(c);
+        // if(c>c1 && c>c2){
+        //     System.out.println(c);
 
-        } else if(c1>c2){
-            System.out.println(c1);
-        }else{
-            System.out.println(c2);
-        }
+        // } else if(c1>c2){
+        //     System.out.println(c1);
+        // }else{
+        //     System.out.println(c2);
+        // }
 
-        int number =4;
+        // int number =4;
 
-        String type = ((number%2) == 0) ? "Even" :"odd"; 
-        System.out.println(type);
+        // String type = ((number%2) == 0) ? "Even" :"odd"; 
+        // System.out.println(type);
 
         // Student pass or fail?
 
-        int marks = 45;
+        // int marks = 45;
 
-        String status = marks>=33 ? "pass" : "fail";
+        // String status = marks>=33 ? "pass" : "fail";
 
-        System.out.println(status);
+        // System.out.println(status);
 
 
-        int number1 = 2;
+        // int number1 = 2;
 
-        switch(number1){
-            case 1 -> System.out.println("burger");
-            case 2 -> System.out.println("pizza");
-            case 3 -> System.out.println("momos");
-            default -> System.out.println("We woke up");
-        }
+        // switch(number1){
+        //     case 1 -> System.out.println("burger");
+        //     case 2 -> System.out.println("pizza");
+        //     case 3 -> System.out.println("momos");
+        //     default -> System.out.println("We woke up");
+        // }
 
         // Calculator
 
@@ -202,13 +202,13 @@ public class JavaBasics{
 
         //  Question2: Finish the following code so that it prints You have a fever if your temperature is above 100 and otherwise prints You don't have a fever.
 
-        double temp = 103.5;
+        // double temp = 103.5;
 
-        if(temp>100){
-            System.out.println("You have fever");
-        }else{
-            System.out.println("You dont have fever");
-        }
+        // if(temp>100){
+        //     System.out.println("You have fever");
+        // }else{
+        //     System.out.println("You dont have fever");
+        // }
 
         // System.out.println("enter day of week in number");
         // int week = sc.nextInt();
@@ -226,34 +226,74 @@ public class JavaBasics{
         //  leap or no
 
         // my solution
-        int year = sc.nextInt();
-
-        if(year%4==0){
-            if(year%100==0){
-                if(year%400==0){
-                    System.out.println("leap year");
-                }else{
-                    System.out.println("not leap year");
-                }
-            }else{
-                System.out.println("leap year");
-            }
-        }else{
-            System.out.println("not leap year");
-        }
-
-        // mam solution
-
-        System.out.print("Input the year: ");
         // int year = sc.nextInt();
-        boolean x = (year % 4) == 0;
-        boolean y = (year % 100) != 0;
-        boolean z = ((year % 100 == 0) && (year % 400 == 0));
-        if (x && (y || z)) {
-        System.out.println(year + " is a leap year");
-        } else {
-        System.out.println(year + " is not a leap year");
+
+        // if(year%4==0){
+        //     if(year%100==0){
+        //         if(year%400==0){
+        //             System.out.println("leap year");
+        //         }else{
+        //             System.out.println("not leap year");
+        //         }
+        //     }else{
+        //         System.out.println("leap year");
+        //     }
+        // }else{
+        //     System.out.println("not leap year");
+        // }
+
+        // // mam solution
+
+        // System.out.print("Input the year: ");
+        // // int year = sc.nextInt();
+        // boolean x = (year % 4) == 0;
+        // boolean y = (year % 100) != 0;
+        // boolean z = ((year % 100 == 0) && (year % 400 == 0));
+        // if (x && (y || z)) {
+        // System.out.println(year + " is a leap year");
+        // } else {
+        // System.out.println(year + " is not a leap year");
+        // }
+
+        // Loops
+
+        // int counter = 1;
+        // System.out.println("enter end number");
+        // int range = sc.nextInt();
+        // while(counter<=range){
+            
+        //     System.out.print(counter + " ");
+        //     counter++;
+        // }
+
+        // Sum of first n natural numbers
+
+        // System.out.print("\nSum of all these numbers is :");
+        // counter = 0;
+        // int sum = 0;
+        // while(counter<=range){
+        //     sum +=  counter;
+        //     counter++;
+        // }
+        // System.out.println(sum);
+
+        // For loop
+
+        // for(int i = 1; i<=range;i++ ){
+        //     System.out.print("Hello world ");
+        // }
+        
+        // printing Square pattern
+
+        int lines = sc.nextInt();
+        for( int i=1; i<=lines;i++){
+            
+            for(int j=1;j<=lines;j++){
+                System.out.print("* ");
+            }
+            System.out.println("");
         }
+
 
 
     }
