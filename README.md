@@ -283,3 +283,15 @@ for(initialization; condition; increment/decrement){
 ```
 
 we use for loop when we know how many times we need something to run
+
+#### Do While loop
+
+work first check after
+
+runs atleast 1 time
+
+#### Break and continue
+
+to exit loop : break
+
+to skip some code iteration : continue

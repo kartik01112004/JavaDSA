@@ -285,16 +285,75 @@ public class JavaBasics{
         
         // printing Square pattern
 
-        int lines = sc.nextInt();
-        for( int i=1; i<=lines;i++){
+        // int lines = sc.nextInt();
+        // for( int i=1; i<=lines;i++){
             
-            for(int j=1;j<=lines;j++){
-                System.out.print("* ");
+        //     for(int j=1;j<=lines;j++){
+        //         System.out.print("* ");
+        //     }
+        //     System.out.println("");
+        // }
+
+        // Reverse a number
+
+        // if we divide any number by 10 we get the last degit
+
+        // int n = 254871;
+        // int reverse=0;
+        // while(n>0){
+        //     int lastDigit = n%10;
+          
+        //     reverse = reverse*10 + lastDigit;
+        //     n/=10;
+        // }
+        // System.out.print(reverse);
+
+        // Do while loop
+
+        // int counter = 1;
+
+        // do { 
+        //     System.out.println("Hello world");
+        //     counter++;
+            
+        // } while (counter <=10);
+
+        // for(int i = 1; i<=5;i++){
+        //     System.out.println(i);
+        //     if(i==3){
+        //         break;
+        //     }
+        // }
+        // System.out.println("out of loop");
+
+        // keep entering numbers till user enters a multiple of 10
+
+        // do{
+        //     System.out.print("Enter your number : ");
+        //     int n = sc.nextInt();
+        //     if(n%10 ==0){
+        //         break;
+        //     }
+        //     System.out.println(n);
+        // }while (true);
+
+        // for(int i =1;i<=5;i++){
+        //     if(i==3){
+        //         continue;
+        //     }
+        //     System.out.println(i);
+        // }
+
+        // Display all numbers except multiple of 10
+
+        do{
+            System.out.print("Enter your number : ");
+            int n = sc.nextInt();
+            if(n%10 == 0){
+                continue;
             }
-            System.out.println("");
-        }
-
-
+            System.out.println(n);
+        }while (true);
 
     }
 }
