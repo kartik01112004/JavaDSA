@@ -323,7 +323,7 @@ public class JavaBasics {
         // }
         // System.out.println("Factorial of " + num + " is " + fact);
         int num = sc.nextInt();
-        int mul = 1;
+        int mul;
         for (int i = 1; i <= 10; i++) {
             mul = num * i;
             System.out.println(num + " X " + i + " = " + mul);
