@@ -295,3 +295,7 @@ runs atleast 1 time
 to exit loop : break
 
 to skip some code iteration : continue
+
+## Nested loops
+
+loop in loop
