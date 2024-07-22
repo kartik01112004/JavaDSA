@@ -299,3 +299,22 @@ to skip some code iteration : continue
 ## Nested loops
 
 loop in loop
+
+## Functions/Methods
+
+block of code that is reuseable as we right logic once and reuse multiple times.
+
+Syntax :
+
+```java
+returnType name(){
+  // body
+  return statement;
+}
+```
+
+Call function
+
+```java
+name();
+```
