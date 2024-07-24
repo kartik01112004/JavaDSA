@@ -7,8 +7,32 @@ public class JavaBasics {
         System.out.println("Hello World");
     }
 
+    public static int calculateSum(int a, int b) {// parameters or formal parameters
+
+        int sum = a + b;
+        return sum;
+    }
+
+    // Swap values
+    public static void swap(int a, int b) {
+        int temp = a;
+        a = b;
+        b = temp;
+
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
+    }
+
     public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
         printHelloWorld();
+        int sum = calculateSum(a, b); // arguments or actual parameters
+
+        System.out.println("Sum is :" + sum);
+
+        swap(a, b);
         // System.out.println("Hello world");
         // System.out.println("****");
         // System.out.println("***");
@@ -40,12 +64,11 @@ public class JavaBasics {
         // int sum = a1 + b1;
         // System.out.println(sum);
         // Sum of 2 numbers by user input
-        Scanner sc = new Scanner(System.in);
+        // Scanner sc = new Scanner(System.in);
         // int a = sc.nextInt();
         // int b = sc.nextInt();
         // sum = a+b;
         // System.out.println(sum);
-
         // int m1 = sc.nextInt();
         // int m2 = sc.nextInt();
         // int mul = m1*m2;

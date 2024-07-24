@@ -318,3 +318,19 @@ Call function
 ```java
 name();
 ```
+
+### Parameters
+
+Parameters are named variables declared as part of a function. They are used to reference the arguments passed into the function.
+
+### What happens in memory?
+
+like variables functions also need memory and they use call stack memory.
+
+it tracks which fn called which or which fn is running.
+
+how much ever memory main fn needs its called stack frame and it stores all variables of that fn.
+
+### Call by value
+
+Java always calls by value
