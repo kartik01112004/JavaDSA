@@ -334,3 +334,12 @@ how much ever memory main fn needs its called stack frame and it stores all vari
 ### Call by value
 
 Java always calls by value
+
+## Understanding error
+
+```error
+Cannot make a static reference to the non-static method multiply(int, int) from the type JavaBasicsJava(603979977)
+non-static method multiply(int,int) cannot be referenced from a static context
+```
+
+[explanation](https://stackoverflow.com/questions/290884/what-is-the-reason-behind-non-static-method-cannot-be-referenced-from-a-static)

@@ -1,6 +1,4 @@
 
-import java.util.Scanner;
-
 public class JavaBasics {
 
     public static void printHelloWorld() {
@@ -23,16 +21,30 @@ public class JavaBasics {
         System.out.println("b = " + b);
     }
 
+    public static int multiply(int a, int b) {
+        return a * b;
+    }
+
+    public static int factorial(int num) {
+        int res = 1;
+        for (int i = 1; i <= num; i++) {
+            System.out.println(res);
+            res *= i;
+        }
+        return res;
+    }
+
     public static void main(String args[]) {
-        Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
-        int b = sc.nextInt();
-        printHelloWorld();
-        int sum = calculateSum(a, b); // arguments or actual parameters
+        // Scanner sc = new Scanner(System.in);
+        // int a = sc.nextInt();
+        // int b = sc.nextInt();
+        // printHelloWorld();
+        // int sum = calculateSum(a, b); // arguments or actual parameters
 
-        System.out.println("Sum is :" + sum);
-
-        swap(a, b);
+        // System.out.println("Sum is :" + sum);
+        // swap(a, b);
+        // System.out.println(multiply(a, b));
+        System.out.println(factorial(5));
         // System.out.println("Hello world");
         // System.out.println("****");
         // System.out.println("***");
@@ -350,12 +362,11 @@ public class JavaBasics {
         //     fact *= i;
         // }
         // System.out.println("Factorial of " + num + " is " + fact);
-        int num = sc.nextInt();
-        int mul;
-        for (int i = 1; i <= 10; i++) {
-            mul = num * i;
-            System.out.println(num + " X " + i + " = " + mul);
-        }
-
+        // int num = sc.nextInt();
+        // int mul;
+        // for (int i = 1; i <= 10; i++) {
+        //     mul = num * i;
+        //     System.out.println(num + " X " + i + " = " + mul);
+        // }
     }
 }
