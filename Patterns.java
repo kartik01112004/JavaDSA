@@ -3,7 +3,7 @@ public class Patterns {
 
     public static void main(String[] args) {
 
-        int n = 4;
+        // int n = 4;
         // pyramid 
         // for (int line = 1; line <= 4; line++) {
         //     for (int star = 1; star <= line; star++) {
@@ -11,7 +11,6 @@ public class Patterns {
         //     }
         //     System.out.println();
         // }
-
         // inverted  pyramid
         // for (int line = 1; line <= n; line++) {
         //     for (int star = 1; star <= n - line + 1; star++) {
@@ -76,7 +75,9 @@ public class Patterns {
         //     }
         //     System.out.println();
         // }
-        //// int line = 5;
+    
+
+//// int line = 5;
         //// for (int i = 1; i <= line; i++) {
         ////   for (int j = 1; j <= i; j++) {
         ////     if (((i % 2) == 0) || ((j % 2) == 0)) {
@@ -87,6 +88,7 @@ public class Patterns {
         ////     }
         ////    System.out.println();
         //// }
+        
 
         
     }

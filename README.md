@@ -343,3 +343,28 @@ non-static method multiply(int,int) cannot be referenced from a static context
 ```
 
 [explanation](https://stackoverflow.com/questions/290884/what-is-the-reason-behind-non-static-method-cannot-be-referenced-from-a-static)
+
+## Inbuilt and user defined methods
+
+inbuilt :
+
+- math -> pow,sqrt,max etc
+- string -> tolower, toupper etc
+- array -> sort, reverse etc
+- Scanner -> sc.nextInt etc
+
+user defined :
+
+- methods in class which we make
+
+## Function overloading
+
+name of fn is same but prams are differnt
+like
+
+```java
+sum(int a,int b);
+sum(int a,int b,int c);
+```
+
+doesnot depend upon return type!!
