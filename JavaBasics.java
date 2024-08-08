@@ -1,6 +1,4 @@
 
-import java.util.Scanner;
-
 public class JavaBasics {
 
     public static void printHelloWorld() {
@@ -61,18 +59,42 @@ public class JavaBasics {
         return a + b + c;
     }
 
+    public static float sum(float a, float b) {
+        return (float) (a + b);
+    }
+
+    public static boolean isPrime(int num) {
+        // boolean isPrime = true;
+        if (num == 2) {
+        } else {
+            for (int i = 2; i <= num / 2; i++) {
+                if (num % i == 0) {
+                    return false;
+                    // isPrime = false;
+                    // break;
+                }
+            }
+        }
+        // return isPrime;
+        return true;
+    }
+
     public static void main(String args[]) {
-        Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
-        int b = sc.nextInt();
+        // Scanner sc = new Scanner(System.in);
+        // int a = sc.nextInt();
+        // int b = sc.nextInt();
+        // float af = sc.nextFloat();
+        // float bf = sc.nextFloat();
         // printHelloWorld();
         // int sum = calculateSum(a, b); // arguments or actual parameters
 
         // System.out.println("Sum is :" + sum);
         // swap(a, b);
         // System.out.println(multiply(a, b));
-        System.out.println(factorial(5));
-        System.out.println(binomialCoff(a, b));
+        // System.out.println(factorial(5));
+        // System.out.println(binomialCoff(a, b));
+        // sum(af, bf);
+        System.out.println(isPrime(2));
         // System.out.println("Hello world");
         // System.out.println("****");
         // System.out.println("***");
