@@ -67,7 +67,7 @@ public class JavaBasics {
         // boolean isPrime = true;
         if (num == 2) {
         } else {
-            for (int i = 2; i <= num / 2; i++) {
+            for (int i = 2; i <= Math.sqrt(num) /*num / 2*/; i++) {
                 if (num % i == 0) {
                     return false;
                     // isPrime = false;
@@ -78,6 +78,16 @@ public class JavaBasics {
         // return isPrime;
         return true;
     }
+
+    public static void primesInRange(int n) {
+        for (int i = 2; i <= n; i++) {
+            if (isPrime(i)) {
+                System.out.print(i + " ");
+            }
+        }
+    }
+
+    
 
     public static void main(String args[]) {
         // Scanner sc = new Scanner(System.in);
@@ -94,7 +104,8 @@ public class JavaBasics {
         // System.out.println(factorial(5));
         // System.out.println(binomialCoff(a, b));
         // sum(af, bf);
-        System.out.println(isPrime(2));
+        System.out.println(isPrime(43));
+        primesInRange(100);
         // System.out.println("Hello world");
         // System.out.println("****");
         // System.out.println("***");
