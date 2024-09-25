@@ -86,10 +86,89 @@ public class JavaBasics {
             }
         }
     }
+    // converting binary to decimal
 
-    
+    public static void binToDec(int binNum) {
+        int myNum = binNum;
+        int pow = 0;
+        int decNum = 0;
+
+        while (binNum > 0) {
+            int lastDigit = binNum % 10;
+            decNum = decNum + (lastDigit * (int) Math.pow(2, pow));
+
+            pow++;
+            binNum = binNum / 10;
+
+        }
+        System.out.println("decimal of " + myNum + " = " + decNum);
+    }
+
+    // decimal to binary
+    public static void decToBin(int dec) {
+        int myNum = dec;
+        int pow = 0;
+        int binNum = 0;
+
+        while (dec > 0) {
+            int rem = dec % 2;
+            binNum = binNum + ((int) Math.pow(10, pow) * rem);
+            pow++;
+            dec = dec / 2;
+        }
+        System.out.println("Binary of " + myNum + " = " + binNum);
+    }
+
+    public static void avg(int a, int b, int c) {
+        int avg = (a + b + c) / 3;
+        System.out.println("Average of " + a + " " + b + " " + c + " " + "is " + avg);
+    }
+
+    public static void isEven(int a) {
+        if (a % 2 == 0) {
+            System.out.println("TRUE");
+        } else {
+            System.out.println("FALSE");
+        }
+    }
+
+    public static void palindrome(int a) {
+        int myNum = a;
+        int temp = 0;
+        while (myNum > 0) {
+            int lastNum = (myNum % 10);
+            temp = temp * 10 + lastNum;
+            myNum = myNum / 10;
+            System.out.println(temp);
+            // System.out.println(myNum);
+        }
+        if (a == temp) {
+            System.out.println(a + " is a palindrome");
+        } else {
+            System.out.println(a + " is not a palindrome");
+        }
+    }
+
+    public static void sumOfDigits(int dig) {
+        int sum = 0;
+        int myNum = dig;
+        while (myNum > 0) {
+            sum += myNum % 10;
+            myNum /= 10;
+        }
+        System.out.println(sum);
+    }
 
     public static void main(String args[]) {
+        palindrome(122);
+        sumOfDigits(111);
+        // binToDec(111);
+        // decToBin(5);
+        // avg(1, 5, 4);
+        // Random rand = new Random();
+        // int Random = rand.nextInt();
+        // System.out.println("Random number is " + Random);
+        // isEven(Random);
         // Scanner sc = new Scanner(System.in);
         // int a = sc.nextInt();
         // int b = sc.nextInt();
@@ -97,15 +176,14 @@ public class JavaBasics {
         // float bf = sc.nextFloat();
         // printHelloWorld();
         // int sum = calculateSum(a, b); // arguments or actual parameters
-
         // System.out.println("Sum is :" + sum);
         // swap(a, b);
         // System.out.println(multiply(a, b));
         // System.out.println(factorial(5));
         // System.out.println(binomialCoff(a, b));
         // sum(af, bf);
-        System.out.println(isPrime(43));
-        primesInRange(100);
+        // System.out.println(isPrime(43));
+        // primesInRange(100);
         // System.out.println("Hello world");
         // System.out.println("****");
         // System.out.println("***");

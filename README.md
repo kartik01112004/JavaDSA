@@ -368,3 +368,28 @@ sum(int a,int b,int c);
 ```
 
 doesnot depend upon return type!!
+
+## Block Scope
+
+It means the visiblilty of a Variable inside the code block.
+Meaning global and local variables
+
+## Arrays
+
+index starts from 0
+List of elements of same type placed in a contigous memory location.
+
+### Oprrations on array
+
+- Create : dataType name[]=new dataType[size];
+- Input
+- Output
+- Update
+
+```java
+
+int marks[] = new int[50];
+
+int numbers[] = {1,2,3,4};
+
+```
