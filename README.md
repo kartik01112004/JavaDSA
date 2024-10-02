@@ -393,3 +393,49 @@ int marks[] = new int[50];
 int numbers[] = {1,2,3,4};
 
 ```
+
+## passing array as args in Function
+
+### Pass by value
+
+### Pass by reference
+
+### Linear Search
+
+time complexity : O(n)
+
+-infinity = integer.MIN_VALUE
++infinity = integer.MAX_VALUE
+
+### Binary search
+
+Time complexity: Check Itreations
+iteration 1 = n;
+iteration 2 = n/2;
+iteration 3 = n/4;
+iteration k = 1;
+now only one element is left and this has to be the key if not then no result found
+
+.'. complexity is k = O(log n)
+
+### Reverse an array
+
+with time O(n) and space O(1)
+
+### Pairs in an array
+
+find all the possible pairs like
+a = [1,5,4]
+pairs : 1,5 1,4 5,4
+
+so these are all possible pairs
+
+Time complexity = O(n^2)
+
+#### nested loops
+
+loop in loop
+
+### Print Subarrays
+
+A continuous part of array
